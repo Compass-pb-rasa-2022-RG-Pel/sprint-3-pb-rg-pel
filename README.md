@@ -6,11 +6,7 @@
 - Tatieli Silveira
 
 ## Objetivo
-<<<<<<< HEAD
 O grupo definiu o uso de um dataset com dados de um conjunto de pacientes, que será usado como base, para ver a probabilidade de doença cardiaca. A partir desses dados, será treinada uma rede neural para a previsão, onde uma pessoa poderá ver a porcentagem de risco de ter uma doença cardiaca.
-=======
-O grupo definiu o uso de um dataset com dados de um conjunto de pacientes, que será usado como base, para uma blablabla. A partir desses dados, será treinada uma rede neural para a previsão, onde uma pessoa poderá ver a porcentagem de risco de ter uma doença cardiaca.
->>>>>>> 00e5370ba478e68e9fbcccf6ceac81068f845953
 
 ## Desenvolvimento
 #### Bibliotecas usadas
