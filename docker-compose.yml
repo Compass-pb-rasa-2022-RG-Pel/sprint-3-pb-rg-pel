@@ -1,0 +1,34 @@
+version: "3"
+
+services: 
+  jupyter_lab:
+    container_name: jupyter_lab
+    build: .
+    depends_on:
+      - mongodb
+    ports:
+      - "8888:8888"
+    networks:
+     - prod
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_TOKEN: "okteto"
+      GRANT_SUDO: "yes"
+    volumes: 
+      - .:/home/jovyan/work
+
+  mongodb:
+      image: mongo
+      container_name: db
+      ports: 
+        - 27017:27017
+      networks:
+        - prod
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: root
+        MONGO_INITDB_DATABASE: sprint3
+
+networks: 
+    prod:
+        driver: bridge
