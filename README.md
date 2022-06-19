@@ -96,5 +96,4 @@ a de 2022-06-18 16-42-55](https://user-images.githubusercontent.com/29054252/174
 ![Captura de tela de 2022-06-17 22-47-37](https://user-images.githubusercontent.com/29054252/174455309-230bd800-8571-406a-9741-875817e42b16.png)
 
 ## Acesso ao app no Okteto
-[endereço do app no okteto]
-- www.okteto.com/appp...
+https://jupyter-lab-evertonlwf.cloud.okteto.net/
