@@ -18,8 +18,23 @@ Avaliação da terceira sprint do programa de bolsas Compass.uol para formação
 ### LINK PARA TESTAR A APLICAÇÃO
 * [Jupter Notebook](https://jupyter-lab-ofernandobarbosa.cloud.okteto.net/lab/workspaces/auto-O?reset)
 * Token de acesso -> okteto
+----
+<img src="/img/login.png">
+----
+
+### COMO INSTALAR
+1 - Após o login, no diretório AI, abra o arquivo setup.ipynb.
+
+2 - Execute o notebook clicando em RUN e, em seguida, em RUN ALL CELLS.
+
+3 - Retorne para o diretório raiz ./Work e execute o arquivo mnist.ipynb.
+
+4 - Basta executar este arquivo da mesma forma que executou no passo 2 e seu notebook foi executado.
 
 ----
+<img src="/img/run.png">
+----
+
 ### SOBRE O DATASET ESCOLHIDO:
 O banco de dados [MNIST](https://www.tensorflow.org/datasets/catalog/mnist) possui 70 mil imagens manuscritas de digitos de 0 a 9, que foram normalizadas e centralizadas em um quadrado de tamanho 28 x 28 pixels. Cada imagem é um array de números de pontos flutuantes, representados em uma escala de cinza de 0 (preto) à 1 (branco).
 ####
