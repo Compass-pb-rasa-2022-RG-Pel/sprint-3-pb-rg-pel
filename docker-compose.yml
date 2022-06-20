@@ -12,6 +12,7 @@ services:
       GRANT_SUDO: "yes"
     volumes:
       - .:/home/jovyan/work/AI
+    command: ["python", "work/AI/copy.py"]
 
   mongodb:
       image: mongo
