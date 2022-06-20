@@ -42,7 +42,42 @@ Código detalhado dentro do [Jupyter Notebook 💻](/mnist.ipynb)
 ----
 ### MONGODB:
 
-####
+#### Ferramentas Utilizadas
+
+Optamos por utilizar o banco de dados não relacional MongoDB com a finalidade de guardar informações processadas no próprio código e, também, realizar testes com elas.
+
+Para isso instalamos, importamos e utilizamos ferramentas como o PYMONGO, o BSON.BINARY, o Mongo Express e o próprio MONGODB. Essas ferramentas permitiram que pudessemos salvar os próprios arquivos, de forma binária, dentro do banco e também recuperar estes intactos no momento oportuno.
+
+#### Instalação
+
+A instalação das ferramentas MongoDB e Mongo Express se deram via arquivo docker-compose.yml.
+
+Enquanto isso, o PyMongo foi instalado na própria aplicação principal mnist.ipynb através do comando '!pip install pymongo'.
+
+#### Conectando com o mongo
+
+- A conexão com o MongoDB se deu na aplicação principal com o comando
+
+```py client = MongoClient("mongodb://root:root@mongodb:27017/")```
+
+- Criamos banco de dados que denominamos "sprint3" através do comando
+
+```py database = client["sprint3"]```
+
+- Utilizamos duas bases de dados, foram elas 'modelo' e 'numeros' para guardar, em binário, respectivamente:
+
+1 - Modelos Treinados
+
+2 - Imagens criadas a mão, no paint, para testes
+
+#### Acesso aos arquivos
+
+- Para reestabelecer os arquivos salvos no MongoDB, utilizamos função de pesquisa find_one com os parâmetros de filename em que localizamos o arquivo específico, a função open para criar e abrir e a função write para escrever de volta o arquivo convertido em binário.
+
+#### Testes com arquivos gerados pelo MongoDB
+
+- Ao fim, utilizando arquivos recuperados do banco de dados, realizamos testes com as imagens feitas a mão para conferir a calibragem da aplicação com os testes previamente realizados via modelo h5.
+
 ----
 ### IMAGENS PARA TESTE:
 As imagens para teste foram criadas manualmente via paint com lápis espessura 2, foram salvas, normalizadas e centralizadas em tamanhos variados.
