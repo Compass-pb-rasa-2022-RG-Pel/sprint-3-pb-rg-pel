@@ -97,3 +97,84 @@ a de 2022-06-18 16-42-55](https://user-images.githubusercontent.com/29054252/174
 
 ## Acesso ao app no Okteto
 https://jupyter-lab-evertonlwf.cloud.okteto.net/
+
+## Aplicação Cats vs Dogs
+
+## Rede Neural Convolucional
+
+Reconhecimento e distinção de imagens de gatos ou cachorros através do dataset cats_vs_dogs
+
+## Desenvolvimento - Bibliotecas e tecnologias 
+
+Geral:
+* Tensorflow/Keras
+* TFlearn
+* Python
+* Numpy
+* matplotlib
+
+Conexão com MongoDB:
+* Pymongo
+
+Tecnologias:
+* Okteto 
+* Docker
+* Jupyter Notebook
+
+## Carregando os dados
+Foi feito o download dos dados brutos por meio de um arquivo zip.
+
+Temos uma pasta chamada PetImages com duas subpastas chamadas Cat e Dog
+
+## Preparação das imagens
+
+Imagens corrompidas foram filtradas
+
+## Preapração das imagens
+
+Labels: As imagens foram classificadas com labels [1,0], sendo 0 para cat e 1 para dog
+
+## Aumento de dados de imagens
+
+Introduzimos artificialmente a diversidade de amostras aplicando transformações aleatórias, mas realistas, nas imagens de treinamento, como inversão horizontal aleatória ou pequenas rotações aleatórias
+
+## Pré- processamento das imagens
+
+As imagens foram redimensionadas em 48x48px
+
+Os dados foram configurados para desempenho - arquivos de treino e validação
+
+## Construção do modelo
+
+* Iniciamos o modelo com o pré-processador, seguido de uma camada.data_augmentationRescaling
+* Incluímos uma camada antes da camada de classificação final.Dropout
+
+## Rede Neural 
+
+O modelo criado foi feito baseando, primeiramente, nas predefinições da dataset que definem imagens coloridas 
+
+* layers.Rescaling --> Uma camada de pré-processamento que redimensiona os valores de entrada para uma nova faixa. Esta camada redimensiona cada valor de uma entrada (muitas vezes uma imagem) multiplicando-se e adicionando.
+
+* layers.Conv2D --> define o número de feautures a serem aprendidas pela rede
+
+* layers.BatchNormalization --> Camada que normaliza as entradas. A normalização do lote aplica uma transformação que mantém a saída média próxima de 0 e o desvio padrão de saída próximo a 1.
+
+* layers.SeparableConv2D --> Convolução 2D separável em profundidade. As convoluções separáveis consistem em primeiro executar uma convolução espacial em profundidade (que age em cada canal de entrada separadamente) seguida de uma convolução pontiacída que mistura os canais de saída resultantes. O argumento controla quantos canais de saída são gerados por canal de entrada na etapa de profundidade.
+
+
+O ReLU aplicará a ativação da função;
+
+Por fim será gerado a saída.
+
+A rede foi treinada com um dataset de 781 imagens, em 10 épocas.
+
+## Saída
+
+Após ter sido treinado, o modelo possui uma acurácia de 85% (aproximadamente), sendo capaz de identificar, diferenciar e rotular imagens de cachorros e gatos.
+
+No MongoDB é possível observar o modelo do projeto salvo e previamente treinado.
+
+## Dificuldades encontradas
+
+
+## Link para acessar o projeto no okteto
