@@ -58,21 +58,25 @@ Enquanto isso, o PyMongo foi instalado na própria aplicação principal mnist.i
 
 - A conexão com o MongoDB se deu na aplicação principal com o comando
 
-```py client = MongoClient("mongodb://root:root@mongodb:27017/")```
+```py 
+client = MongoClient("mongodb://root:root@mongodb:27017/")
+```
 
 - Criamos banco de dados que denominamos "sprint3" através do comando
 
-```py database = client["sprint3"]```
+```py 
+database = client["sprint3"]
+```
 
 - Utilizamos duas bases de dados, foram elas 'modelo' e 'numeros' para guardar, em binário, respectivamente:
 
-1 - Modelos Treinados
+    1 - Modelos Treinados
 
-2 - Imagens criadas a mão, no paint, para testes
+    2 - Imagens criadas a mão, no paint, para testes
 
 #### Acesso aos arquivos
 
-- Para reestabelecer os arquivos salvos no MongoDB, utilizamos função de pesquisa find_one com os parâmetros de filename em que localizamos o arquivo específico, a função open para criar e abrir e a função write para escrever de volta o arquivo convertido em binário.
+- Para reestabelecer os arquivos salvos no MongoDB, utilizamos função de pesquisa `find_one` com os parâmetros de `filename` em que localizamos o arquivo específico, a função open para criar e abrir e a função `write` para escrever de volta o arquivo convertido em binário.
 
 #### Testes com arquivos gerados pelo MongoDB
 
