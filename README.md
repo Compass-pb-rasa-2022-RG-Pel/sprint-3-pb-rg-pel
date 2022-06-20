@@ -175,6 +175,13 @@ Após ter sido treinado, o modelo possui uma acurácia de 85% (aproximadamente),
 No MongoDB é possível observar o modelo do projeto salvo e previamente treinado.
 
 ## Dificuldades encontradas
+Problema encontrado para executar o treinamento do dataset no okteto. 
+![performace-critical-operation](https://github.com/Compass-pb-rasa-2022-RG-Pel/sprint-3-pb-rg-pel/blob/grupo-1/assets/img/dificuldades.png)
+Problema encontado ao baixar o dataset de imagens no okteto (velocidade muito baixa para download).
+![performace-network-speed](https://raw.githubusercontent.com/Compass-pb-rasa-2022-RG-Pel/sprint-3-pb-rg-pel/grupo-1/assets/img/dificuldades-1.png)
 
+Para contornar estes problemas optamos por execuar o notebook no ambiente do [colab](https://colab.research.google.com/), e subir o dataset pronto.
 
 ## Link para acessar o projeto no okteto
+
+[Okteto](https://jupyter-lab-evertonlwf.cloud.okteto.net/)
