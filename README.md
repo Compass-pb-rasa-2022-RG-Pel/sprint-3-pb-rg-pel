@@ -50,9 +50,12 @@ Para isso instalamos, importamos e utilizamos ferramentas como o PYMONGO, o BSON
 
 #### Instalação
 
-A instalação das ferramentas MongoDB e Mongo Express se deram via arquivo docker-compose.yml.
+A instalação das ferramentas MongoDB e Mongo Express se deram via arquivo [docker-compose](/docker-compose.yml).
 
-Enquanto isso, o PyMongo foi instalado na própria aplicação principal mnist.ipynb através do comando '!pip install pymongo'.
+Enquanto isso, o PyMongo foi instalado na própria aplicação principal mnist.ipynb através do comando
+```py
+!pip install pymongo
+``` 
 
 #### Conectando com o mongo
 
@@ -85,11 +88,23 @@ database = client["sprint3"]
 ----
 ### IMAGENS PARA TESTE:
 As imagens para teste foram criadas manualmente via paint com lápis espessura 2, foram salvas, normalizadas e centralizadas em tamanhos variados.
-####
+
+<img src="img/zero.png"> <img src="img/um.png"> <img src="img/dois.png"> <img src="img/tres.png"> <img src="img/quatro.png"> <img src="img/cinco.png">
+<img src="img/seis.png"> <img src="img/sete.png"> <img src="img/oito.png"> <img src="img/nove.png">
 ----
 ### CONSIDERAÇÕES FINAIS:
 #### Dificuldades encontradas
 
+Impende destacar nossas dificuldades na utilização do JupyterLab integrado ao container no Okteto porque, após a instalação, não é mais concedido acesso de administrador ao utilizador do sistema. Ou seja, muito embora se utilize de usuário root (necessário) para realizar a instalação da aplicação, ainda assim, não temos permissões para realizar alterações nos arquivos criados originalmente.
+
+No terminal, por exemplo, não temos senha ou usuário Administrador para remover essas limitações.
+
+<img src="img/writable-false.png">
+
 #### Soluções encontradas
-####
+
+A solução que encontramos foi, após a criação dos arquivos e pastas, criarmos uma cópia da aplicação principal diretamente na raiz '/work' e executar nosso notebook a partir dela. Nossos modelos e arquivos para testes são, também, colocados na pasta raiz, mas isso é feito diretamente pelo banco de dados. 
+
+<img src="img/writable-true.png">
+
 ----
