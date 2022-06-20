@@ -96,7 +96,8 @@ a de 2022-06-18 16-42-55](https://user-images.githubusercontent.com/29054252/174
 ![Captura de tela de 2022-06-17 22-47-37](https://user-images.githubusercontent.com/29054252/174455309-230bd800-8571-406a-9741-875817e42b16.png)
 
 ## Acesso ao app no Okteto
-https://jupyter-lab-evertonlwf.cloud.okteto.net/
+[okteto](https://jupyter-lab-evertonlwf.cloud.okteto.net/)
+senha: okteto
 
 ## Aplicação Cats vs Dogs
 
@@ -185,3 +186,5 @@ Para contornar estes problemas optamos por execuar o notebook no ambiente do [co
 ## Link para acessar o projeto no okteto
 
 [Okteto](https://jupyter-lab-evertonlwf.cloud.okteto.net/)
+
+senha: okteto
