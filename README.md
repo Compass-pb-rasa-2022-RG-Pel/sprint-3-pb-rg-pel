@@ -10,7 +10,7 @@ Avaliação da terceira sprint do programa de bolsas Compass.uol para formação
 
 ----
 ### DATASET ESCOLHIDO:
-<img src="https://raw.githubusercontent.com/mbornet-hl/MNIST/master/IMAGES/GROUPS/mnist_v5_MNIST-2_01001-02000_25x40.png" width="400">
+<img src="https://raw.githubusercontent.com/mbornet-hl/MNIST/master/IMAGES/GROUPS/mnist_v5_MNIST-2_01001-02000_25x40.png">
 
 #### [MNIST 0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣](https://www.tensorflow.org/datasets/catalog/mnist)
 ----
